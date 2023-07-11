@@ -1,16 +1,15 @@
-{
-  "extends": "",
-  "rules": {
-    "indent": ["error", 2]
-  },
-  "env": {
-    "es6": true,
-    "mocha": true,
-    "node": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  }
-}
+// {
+//   "extends": "",
+//   "rules": {
+//   },
+//   "env": {
+//     "es6": true,
+//     "mocha": true,
+//     "node": true
+//   },
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//       "jsx": true
+//     }
+//   }
+// }

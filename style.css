@@ -1,5 +1,6 @@
 [data-row] {
   display: flex;
+  /* flex-direction: column; */
   justify-content: flex-start;
   align-items: center;
   height: 34px;
@@ -7,8 +8,20 @@
   border: 1px solid lightgray;
 }
 
+#rowContainers {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  border: 10px solid black;
+}
+
 .row {
-  z-index: -10;
+  /* z-index: -10; */
+  display: flex;
+  flex-direction: column-reverse;
+  height: 200px;
+  width: 5px;
+  background-color: brown;
 }
 
 [data-row].red {
@@ -19,9 +32,9 @@
   background-color: #ffffa9;
 }
 
-[data-row].green {
+/* [data-row].green {
   background-color: #baf6ba;
-}
+} */
 
 [data-row].blue {
   background-color: aliceblue;
@@ -59,4 +72,9 @@
 #announce-game-won {
   font-size: 50px;
   text-align: center;
+}
+
+
+#four {
+  width: 50px;
 }
