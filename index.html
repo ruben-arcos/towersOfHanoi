@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Towers of Hanoi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Italiana&family=Roboto:wght@300;400;500;700&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Towers Of Hanoi</h1>
-    <hr/>
-    <section id="rowContainers">
-        <div id="top-row" data-row="top" class="red row" onclick="selectRow(this)"></div>
-        <div id="middle-row" data-row="middle" class="yellow row" onclick="selectRow(this)"></div>
-        <div id="bottom-row" class="green row" data-row="bottom" onclick="selectRow(this)">
-          <div id="four" data-size="4" data-color="yellow" class="stone" ></div>
-          <div id="3" data-size="3" data-color="red" class="stone" ></div>
-          <div id="2" data-size="2" data-color="green" class="stone" ></div>
-          <div id="1" data-size="1" data-color="blue" class="stone" ></div>
-        </div>
+    <h1 class="neonText">Towers Of Hanoi</h1>
+    <section id="columnContainers">
+      <div
+        id="left-column"
+        data-column="left"
+        class="red column"
+        onclick="selectColumn(this)"
+      >
+        <div id="one" data-size="1" data-color="blue" class="stone"></div>
+        <div id="two" data-size="2" data-color="green" class="stone"></div>
+        <div id="three" data-size="3" data-color="red" class="stone"></div>
+        <div id="four" data-size="4" data-color="yellow" class="stone"></div>
+      </div>
+      <div
+        id="middle-column"
+        data-column="middle"
+        class="yellow column"
+        onclick="selectColumn(this)"
+      ></div>
+      <div
+        id="right-column"
+        class="green column"
+        data-column="right"
+        onclick="selectColumn(this)"
+      ></div>
     </section>
-     
-     
-    <hr/>
   </body>
 </html>
-
-
-
